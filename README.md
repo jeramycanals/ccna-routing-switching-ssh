@@ -3,9 +3,15 @@
   <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/a445aca4-18d7-4d4f-b479-59ea2d1882f5" />
 </p>
 
-# Packet Tracer – Routing, Switching, and Secure SSH Configuration
+# Routing, Switching, and Secure SSH Configuration - Packet Tracer
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+<p align="center">
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+## Network Topology
 
 <p align="center">
   <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -20,12 +26,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ## Operating Systems Used
 
 - Cisco IOS (Internetwork Operating System)
-
-## Network Topology
-
-<p align="center">
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 
 ## Lab Sections (High-Level Overview)
 
