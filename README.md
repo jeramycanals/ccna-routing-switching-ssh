@@ -1,6 +1,6 @@
 <p align="center">
-  <img width="317" height="212" alt="image" src="https://github.com/user-attachments/assets/69de9c93-46c5-486d-b60c-6fc096085465" />
-  <img width="317" height="212" alt="image" src="https://github.com/user-attachments/assets/a445aca4-18d7-4d4f-b479-59ea2d1882f5" />
+  <img width="450" height="300" alt="image" src="https://github.com/user-attachments/assets/69de9c93-46c5-486d-b60c-6fc096085465" />
+  <img width="450" height="300" alt="image" src="https://github.com/user-attachments/assets/a445aca4-18d7-4d4f-b479-59ea2d1882f5" />
 </p>
 
 # Routing, Switching, and Secure SSH Configuration in Packet Tracer
