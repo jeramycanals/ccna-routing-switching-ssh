@@ -35,9 +35,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Part 1 – Configure Devices and Verify Connectivity
 
-### Step 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Part 1, we will set up the network topology and configure basic settings, such as the interface IP addresses, device access, and passwords. We will refer to the Addressing Table for device names and address information.
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+### Step 1 Connect the devices.
+
+We will connect the devices using the correct cables between the devices as listed below:
+
+- Connect PCA F0 to S1 F0/1.
+- Connect S1 G0/1 to R1 G0/0/1
+- Connect R1 G0/0/0 to PCB F0.
+- <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 ### Part 1 Summary
 
