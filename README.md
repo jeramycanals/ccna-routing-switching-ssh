@@ -49,14 +49,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 In Part 1, we will set up the network topology and configure basic settings, such as the interface IP addresses, device access, and passwords. We will refer to the Addressing Table for device names and address information.
 
-### Step 1 Connect the devices.
+### Step 1: Connect the devices.
 
-We will connect the devices using the correct cables between the devices as listed below:
+Connect the devices using Copper Straight-Through cables as listed below:
 
 - Connect PCA F0 to S1 F0/1.
 - Connect S1 G0/1 to R1 G0/0/1
 - Connect R1 G0/0/0 to PCB F0.
-- <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="604" height="297" alt="image" src="https://github.com/user-attachments/assets/91f7aac9-15d1-4d40-87ca-df790905db6b" />
+
+### Step 2: Assign static IP information to the PC interfaces.
+
+a.     Configure the IP address, subnet mask, and default gateway settings on PC-A according to the Addressing Table.
+<img width="753" height="215" alt="image" src="https://github.com/user-attachments/assets/6e7fa358-b315-4a82-935a-380b5ef36e8b" />
+
+b.     Configure the IP address, subnet mask, and default gateway settings on PC-B.
+
+c.     Ping PC-B from a command prompt window on PC-A.
+
+Why were the pings not successful?
+
+
 
 ### Part 1 Summary
 
