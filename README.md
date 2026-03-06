@@ -72,6 +72,32 @@ c.     Ping PC-B from a command prompt window on PC-A.
 Why were the pings not successful?
 The pings were not successful because the network devices (router and switch) in between the PCs have not been configured yet.
 
+### Step 3: Configure R1 (Router).
+
+a.     Console into the router and enable privileged EXEC mode. Use console cable and terminal on a PC.
+<img width="1027" height="148" alt="image" src="https://github.com/user-attachments/assets/b5b8370c-1145-49ca-aab3-429372fcf268" />
+<img width="256" height="486" alt="image" src="https://github.com/user-attachments/assets/25458597-b0c9-4809-b41c-180848c3e9a5" />
+
+b.     Enter configuration mode.
+
+<img width="448" height="59" alt="image" src="https://github.com/user-attachments/assets/68303dd7-6108-46ff-9f1a-c99fdca64a52" />
+
+c.     Assign a device name to the router according to the Addressing Table.
+
+d.     Assign class as the privileged EXEC encrypted password.
+
+e.     Assign cisco as the console password and enable login.
+
+f.      Encrypt the plaintext passwords.
+
+g.     Create a banner that warns anyone accessing the device that unauthorized access is prohibited.
+
+h.     Configure the IP addresses according to the Addressing Table and activate both Ethernet interfaces on the router.
+
+i.      Save the running configuration to the startup configuration file.
+
+Were the pings successful? Why?
+
 ### Part 1 Summary
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
