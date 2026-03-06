@@ -64,12 +64,13 @@ a.     Configure the IP address, subnet mask, and default gateway settings on PC
 <img width="753" height="215" alt="image" src="https://github.com/user-attachments/assets/6e7fa358-b315-4a82-935a-380b5ef36e8b" />
 
 b.     Configure the IP address, subnet mask, and default gateway settings on PC-B.
+<img width="751" height="210" alt="image" src="https://github.com/user-attachments/assets/3f509be5-af71-488d-80a1-31ba1203c474" />
 
 c.     Ping PC-B from a command prompt window on PC-A.
+<img width="766" height="268" alt="image" src="https://github.com/user-attachments/assets/aafe61c0-a2d8-418a-abba-5ed38a541214" />
 
 Why were the pings not successful?
-
-
+The pings were not successful because the network devices (router and switch) in between the PCs have not been configured yet.
 
 ### Part 1 Summary
 
