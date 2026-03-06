@@ -70,6 +70,7 @@ c.     Ping PC-B from a command prompt window on PC-A.
 <img width="766" height="268" alt="image" src="https://github.com/user-attachments/assets/aafe61c0-a2d8-418a-abba-5ed38a541214" />
 
 Why were the pings not successful?
+
 The pings were not successful because the network devices (router and switch) in between the PCs have not been configured yet.
 
 ### Step 3: Configure R1 (Router).
