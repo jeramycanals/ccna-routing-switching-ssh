@@ -81,17 +81,27 @@ a.     Console into the router and enable privileged EXEC mode. Use console cabl
 
 b.     Enter configuration mode.
 
-<img width="448" height="59" alt="image" src="https://github.com/user-attachments/assets/68303dd7-6108-46ff-9f1a-c99fdca64a52" />
+<img width="438" height="43" alt="image" src="https://github.com/user-attachments/assets/487ca9a5-0648-425a-a0f2-13235cceb831" />
 
 c.     Assign a device name to the router according to the Addressing Table.
 
+<img width="216" height="29" alt="image" src="https://github.com/user-attachments/assets/e89808ae-a29d-413b-be60-804fbcc21318" />
+
 d.     Assign class as the privileged EXEC encrypted password.
+
+<img width="253" height="26" alt="image" src="https://github.com/user-attachments/assets/9e5d94d8-b35e-4be5-99fb-9cdfe72a7245" />
 
 e.     Assign cisco as the console password and enable login.
 
+<img width="224" height="64" alt="image" src="https://github.com/user-attachments/assets/8f9ec2e7-5ec0-40ac-b815-5c4d16cc227d" />
+
 f.      Encrypt the plaintext passwords.
 
+<img width="273" height="27" alt="image" src="https://github.com/user-attachments/assets/2d3ab5c5-6ca9-46a8-96d0-7784f2b824a7" />
+
 g.     Create a banner that warns anyone accessing the device that unauthorized access is prohibited.
+
+<img width="411" height="95" alt="image" src="https://github.com/user-attachments/assets/0efc36b4-9901-4491-a651-1822a9d4e48e" />
 
 h.     Configure the IP addresses according to the Addressing Table and activate both Ethernet interfaces on the router.
 
