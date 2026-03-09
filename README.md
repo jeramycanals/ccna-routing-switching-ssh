@@ -101,13 +101,23 @@ f.      Encrypt the plaintext passwords.
 
 g.     Create a banner that warns anyone accessing the device that unauthorized access is prohibited.
 
-<img width="411" height="95" alt="image" src="https://github.com/user-attachments/assets/0efc36b4-9901-4491-a651-1822a9d4e48e" />
+<img width="421" height="26" alt="image" src="https://github.com/user-attachments/assets/1d02ad2b-95b6-4f7e-8858-16a874b10f6c" />
 
 h.     Configure the IP addresses according to the Addressing Table and activate both Ethernet interfaces on the router.
 
+<img width="628" height="275" alt="image" src="https://github.com/user-attachments/assets/85e693e6-627a-484e-ba40-1d8d40d886ed" />
+
 i.      Save the running configuration to the startup configuration file.
 
-Were the pings successful? Why?
+<img width="293" height="69" alt="image" src="https://github.com/user-attachments/assets/ea33a6b1-f1c5-4350-8554-2fec2d165f24" />
+
+j.     Ping PC-B from a command prompt window on PC-A again.
+
+<img width="766" height="521" alt="image" src="https://github.com/user-attachments/assets/d7edc3d2-dd75-41c4-9f13-2dd3f99684ca" />
+
+Were the pings successful this time? Why?
+
+Yes, the pings were successful. In the first ping attempt, the first packet timed out, but the next three packets were received successfully. This happens because the device must first perform ARP (Address Resolution Protocol) to learn the MAC address of the destination or the default gateway. During this process, the first ping request may fail while the ARP table is being updated with the correct MAC address. As shown in the screenshot, the first ping resulted in 1 packet lost (25% loss). However, when the ping command was run again, all four packets were received successfully with 0% packet loss, confirming that the network connectivity between the devices is functioning correctly. Once the ARP information was stored in the device’s ARP cache, communication between the devices happened without any further issues.
 
 ### Part 1 Summary
 
