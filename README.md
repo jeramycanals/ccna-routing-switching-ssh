@@ -60,13 +60,13 @@ Connect the devices using Copper Straight-Through cables as listed below:
 
 ### Step 2: Assign static IP information to the PC interfaces.
 
-a.     Configure the IP address, subnet mask, and default gateway settings on PC-A according to the Addressing Table.
+a. Configure the IP address, subnet mask, and default gateway settings on PC-A according to the Addressing Table.
 <img width="753" height="215" alt="image" src="https://github.com/user-attachments/assets/6e7fa358-b315-4a82-935a-380b5ef36e8b" />
 
-b.     Configure the IP address, subnet mask, and default gateway settings on PC-B.
+b. Configure the IP address, subnet mask, and default gateway settings on PC-B.
 <img width="751" height="210" alt="image" src="https://github.com/user-attachments/assets/3f509be5-af71-488d-80a1-31ba1203c474" />
 
-c.     Ping PC-B from a command prompt window on PC-A.
+c. Ping PC-B from a command prompt window on PC-A.
 <img width="766" height="268" alt="image" src="https://github.com/user-attachments/assets/aafe61c0-a2d8-418a-abba-5ed38a541214" />
 
 Why were the pings not successful?
@@ -75,49 +75,71 @@ The pings were not successful because the network devices (router and switch) in
 
 ### Step 3: Configure R1 (Router).
 
-a.     Console into the router and enable privileged EXEC mode. Use console cable and terminal on a PC.
+a. Console into the router and enable privileged EXEC mode. Use console cable and terminal on a PC.
 <img width="1027" height="148" alt="image" src="https://github.com/user-attachments/assets/b5b8370c-1145-49ca-aab3-429372fcf268" />
 <img width="256" height="486" alt="image" src="https://github.com/user-attachments/assets/25458597-b0c9-4809-b41c-180848c3e9a5" />
 
-b.     Enter configuration mode.
+b. Enter configuration mode.
 
 <img width="438" height="43" alt="image" src="https://github.com/user-attachments/assets/487ca9a5-0648-425a-a0f2-13235cceb831" />
 
-c.     Assign a device name to the router according to the Addressing Table.
+c. Assign a device name to the router according to the Addressing Table.
 
 <img width="216" height="29" alt="image" src="https://github.com/user-attachments/assets/e89808ae-a29d-413b-be60-804fbcc21318" />
 
-d.     Assign class as the privileged EXEC encrypted password.
+d. Assign class as the privileged EXEC encrypted password.
 
 <img width="253" height="26" alt="image" src="https://github.com/user-attachments/assets/9e5d94d8-b35e-4be5-99fb-9cdfe72a7245" />
 
-e.     Assign cisco as the console password and enable login.
+e. Assign cisco as the console password and enable login.
 
 <img width="224" height="64" alt="image" src="https://github.com/user-attachments/assets/8f9ec2e7-5ec0-40ac-b815-5c4d16cc227d" />
 
-f.      Encrypt the plaintext passwords.
+f. Encrypt the plaintext passwords.
 
 <img width="273" height="27" alt="image" src="https://github.com/user-attachments/assets/2d3ab5c5-6ca9-46a8-96d0-7784f2b824a7" />
 
-g.     Create a banner that warns anyone accessing the device that unauthorized access is prohibited.
+g. Create a banner that warns anyone accessing the device that unauthorized access is prohibited.
 
 <img width="421" height="26" alt="image" src="https://github.com/user-attachments/assets/1d02ad2b-95b6-4f7e-8858-16a874b10f6c" />
 
-h.     Configure the IP addresses according to the Addressing Table and activate both Ethernet interfaces on the router.
+h. Configure the IP addresses according to the Addressing Table and activate both Ethernet interfaces on the router.
 
 <img width="628" height="275" alt="image" src="https://github.com/user-attachments/assets/85e693e6-627a-484e-ba40-1d8d40d886ed" />
 
-i.      Save the running configuration to the startup configuration file.
+i. Save the running configuration to the startup configuration file.
 
 <img width="293" height="69" alt="image" src="https://github.com/user-attachments/assets/ea33a6b1-f1c5-4350-8554-2fec2d165f24" />
 
-j.     Ping PC-B from a command prompt window on PC-A again.
+j. Ping PC-B from a command prompt window on PC-A again.
 
 <img width="766" height="521" alt="image" src="https://github.com/user-attachments/assets/d7edc3d2-dd75-41c4-9f13-2dd3f99684ca" />
 
 Were the pings successful this time? Why?
 
 Yes, the pings were successful. In the first ping attempt, the first packet timed out, but the next three packets were received successfully. This happens because the device must first perform ARP (Address Resolution Protocol) to learn the MAC address of the destination or the default gateway. During this process, the first ping request may fail while the ARP table is being updated with the correct MAC address. As shown in the screenshot, the first ping resulted in 1 packet lost (25% loss). However, when the ping command was run again, all four packets were received successfully with 0% packet loss, confirming that the network connectivity between the devices is functioning correctly. Once the ARP information was stored in the device’s ARP cache, communication between the devices happened without any further issues.
+
+### Step 4: Configure S1 (Switch).
+
+a. Console into the switch and enable privileged EXEC mode.
+
+b. Enter configuration mode.
+
+c. Assign a device name to the switch according to the Addressing Table.
+
+d. Assign class as the privileged EXEC encrypted password.
+
+e. Assign cisco as the console password and enable login.
+
+f. Encrypt the plaintext passwords.
+
+g. Create a banner that warns anyone accessing the device that unauthorized access is prohibited.
+
+h. Configure the IP address for the SVI for VLAN 1 according to the Addressing Table and activate the interface.
+
+i. Configure the default gateway according to the Addressing Table.
+
+j. Save the running configuration to the startup configuration file.
 
 ### Part 1 Summary
 
