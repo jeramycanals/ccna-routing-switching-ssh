@@ -22,7 +22,7 @@ Overall, this lab provides foundational networking skills, including device conf
 ## Network Topology
 
 <p align="center">
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img width="1044" height="222" alt="image" src="https://github.com/user-attachments/assets/6109a183-96bf-4187-b54e-d2aa036276ef" />
 </p>
 
 ## Environments and Technologies Used
@@ -239,7 +239,23 @@ The interfaces associated with the C coded routes are GigabitEthernet0/0/0 and G
 
 ### Step 3: Display interface information on the router.
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+#### Use the show interface g0/1 to answer the following questions.
+
+#### R1# show interfaces g0/0/1
+
+<img width="476" height="352" alt="image" src="https://github.com/user-attachments/assets/17976994-22f6-4507-9d15-d29cc5a5ac59" />
+
+#### What is the operational status of the G0/0/1 interface?
+
+The operational status of the g0/0/1 interface is up, line protocol is up (connected).
+
+#### What is the Media Access Control (MAC) address of the G0/01 interface?
+
+The MAC address of the g0/0/1 interface is 0060.3edc.7802 (bia 0060.3edc.7802).
+
+#### How is the Internet address displayed in this command?
+
+The Internet address is displayed in CIDR notation as 192.168.1.1/24.
 
 ### Step 4: Display a summary list of the interfaces on the router and switch.
 
