@@ -5,7 +5,15 @@
 
 # Routing, Switching, and Secure SSH Configuration in Packet Tracer
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+This project is a hands-on Cisco Packet Tracer lab walkthrough that demonstrates the configuration of a basic network consisting of a router, switch, and two end devices. The lab focuses on building a functional network from scratch by assigning IP addressing, configuring network devices, and verifying connectivity between hosts.
+
+In Part 1, devices are physically connected and configured with static IP addresses, while the router and switch are set up with basic security features such as encrypted passwords, console access, and a management interface. Network connectivity is then tested using ping to ensure proper communication between different subnets.
+
+Part 2 involves using Cisco IOS commands to retrieve and interpret device information, including hardware details, routing tables, and interface status. This reinforces an understanding of how routers and switches operate and how to verify configurations in a real-world environment.
+
+In Part 3, secure remote access is implemented by configuring SSH on the router. This includes setting a domain name, generating RSA keys, creating user credentials, and restricting VTY access to SSH only. The configuration is then tested to confirm successful remote login.
+
+Overall, this lab provides foundational networking skills, including device configuration, troubleshooting connectivity, interpreting IOS output, and implementing secure remote management. These are key competencies for networking roles and CCNA knowledge.
 
 <p align="center">
   <img width="776" height="208" alt="image" src="https://github.com/user-attachments/assets/b8623b08-b047-4dfa-b7c2-7c2e87b8623d" />
@@ -19,13 +27,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Environments and Technologies Used
 
-- lorem
-- lorem
-- lorem
+- Cisco Packet Tracer
+- Cisco IOS (Router and Switch CLI)
+- IPv4 Addressing and Subnetting
+- Static IP Configuration
+- VLAN (SVI for switch management)
+- SSH (Secure Remote Access)
+- Network Troubleshooting (Ping, Tracert)
+- Routing (Directly Connected Networks)
 
 ## Operating Systems Used
 
-- Cisco IOS (Internetwork Operating System)
+- Windows (PC-A and PC-B simulation)
+- Cisco IOS (Router and Switch operating system)
 
 ## Lab Sections (High-Level Overview)
 
