@@ -141,11 +141,19 @@ d. Assign class as the privileged EXEC encrypted password.
 
 e. Assign cisco as the console password and enable login.
 
+<img width="217" height="66" alt="image" src="https://github.com/user-attachments/assets/7a699354-0783-4fe4-a58a-4f5809a3a16d" />
+
 f. Encrypt the plaintext passwords.
+
+<img width="277" height="27" alt="image" src="https://github.com/user-attachments/assets/9d978308-39b5-40c2-a486-62227fa245d3" />
 
 g. Create a banner that warns anyone accessing the device that unauthorized access is prohibited.
 
+<img width="421" height="27" alt="step4g" src="https://github.com/user-attachments/assets/824fd37b-db26-4e15-bcf3-ce7fcaef6eed" />
+
 h. Configure the IP address for the SVI for VLAN 1 according to the Addressing Table and activate the interface.
+
+<img width="527" height="144" alt="image" src="https://github.com/user-attachments/assets/454e19de-4c7d-46c1-a533-40d53bcfc250" />
 
 i. Configure the default gateway according to the Addressing Table.
 
