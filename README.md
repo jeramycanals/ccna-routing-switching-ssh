@@ -165,7 +165,13 @@ j. Save the running configuration to the startup configuration file.
 
 ### Part 1 Summary
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In this part of the lab, a basic network topology was set up and configured to establish communication between devices. The process began by physically connecting the devices using the correct interfaces: PC-A to the switch, the switch to the router, and the router to PC-B.
+
+Static IP addresses, subnet masks, and default gateways were then assigned to both PCs. Initial connectivity tests (ping) between PC-A and PC-B were unsuccessful because the router had not yet been configured to route traffic between the two networks.
+
+Next, the router (R1) was configured with a hostname, secure passwords, encrypted credentials, and a login banner. IP addresses were assigned to both router interfaces and activated, enabling routing between networks. After this configuration, connectivity between the PCs was successfully established.
+
+Finally, the switch (S1) was configured with basic security settings, including passwords and encryption, along with a management IP address using VLAN 1 (SVI). A default gateway was also configured to allow remote management of the switch from other networks. The configuration was saved to ensure persistence after reboot.
 
 ## Part 2 – Display Device Information
 
