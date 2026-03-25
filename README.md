@@ -301,9 +301,28 @@ This part reinforces the ability to interpret device output, verify configuratio
 
 ## Part 3: Secure Remote Access to the Router
 
-### Step 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+### Step 1: Set the IP domain name and generate secure keys.
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+a. On R1, configure the domain name as academy.net.
+
+`R1(config)#ip domain-name academy.net`
+
+<img width="291" height="26" alt="image" src="https://github.com/user-attachments/assets/4594f564-b99f-4422-ac69-5971ae786ae5" />
+
+b. Generate RSA keys with a 1024 key length.
+
+```
+R1(config)#crypto key generate rsa
+The name for the keys will be: R1.academy.net
+Choose the size of the key modulus in the range of 360 to 2048 for your
+General Purpose Keys. Choosing a key modulus greater than 512 may take
+a few minutes.
+
+How many bits in the modulus [512]: 1024
+% Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
+```
+
+<img width="514" height="131" alt="image" src="https://github.com/user-attachments/assets/3030dd34-404c-440c-9cc1-4949fc9f648d" />
 
 ### Part 3 Summary
 
