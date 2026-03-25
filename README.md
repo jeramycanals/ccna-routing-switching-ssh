@@ -41,7 +41,7 @@ Overall, this lab provides foundational networking skills, including device conf
 - Windows (PC-A and PC-B simulation)
 - Cisco IOS (Router and Switch operating system)
 
-## Lab Objectives (High-Level Overview)
+## Lab Objectives
 
 [Part 1: Configure Devices and Verify Connectivity](#part-1--configure-devices-and-verify-connectivity)
 - Assign static IP information to the PC interfaces.
@@ -197,7 +197,7 @@ In Part 2, we will use Cisco IOS commands to retrieve and analyze information fr
 
 #### R1# show version
 
-<img width="679" height="351" alt="image" src="https://github.com/user-attachments/assets/c17d5b7a-3ba1-4e00-807a-68d6a3a6f4c3" />
+<img width="679" height="351" alt="part_2_step_1a" src="https://github.com/user-attachments/assets/bb52b934-ea39-4d69-b320-2afac335a2ce" />
 
 #### What is the name of the IOS image that the router is running?
 
@@ -218,6 +218,18 @@ The IOS software image and version running on the switch is Cisco IOS Software, 
 The model number of the switch is WS-C2960-24TT.
 
 ### Step 2: Display the routing table on the router.
+
+#### Use the show ip route command on the router to answer the following questions.
+
+#### R1# show ip route
+
+<img width="563" height="253" alt="image" src="https://github.com/user-attachments/assets/7ba8764a-746e-434b-9c88-460d61e83de2" />
+
+#### What code is used in the routing table to indicate a directly connected network?
+
+#### How many route entries are coded with a C code in the routing table?
+
+#### What interface types are associated to the C coded routes?
 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
