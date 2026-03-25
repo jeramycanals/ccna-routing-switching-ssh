@@ -70,7 +70,8 @@ In Part 1, we will set up the network topology and configure basic settings, suc
 - Connect PCA F0 to S1 F0/1.
 - Connect S1 G0/1 to R1 G0/0/1
 - Connect R1 G0/0/0 to PCB F0.
-<img width="604" height="297" alt="image" src="https://github.com/user-attachments/assets/91f7aac9-15d1-4d40-87ca-df790905db6b" />
+
+<img width="492" height="101" alt="image" src="https://github.com/user-attachments/assets/84432622-188d-4ac6-8295-56f06ad054a8" />
 
 ### Step 2: Assign static IP information to the PC interfaces.
 
@@ -195,7 +196,7 @@ In Part 2, we will use Cisco IOS commands to retrieve and analyze information fr
 
 #### a. Use the show version command to answer the following questions about the router.
 
-#### R1# show version
+`R1#show version`
 
 <img width="679" height="351" alt="part_2_step_1a" src="https://github.com/user-attachments/assets/bb52b934-ea39-4d69-b320-2afac335a2ce" />
 
@@ -205,7 +206,7 @@ The system image file is "bootflash:/isr4300-universalk9.03.16.05.S.155-3.S5-ext
 
 #### b. Use the show version command to answer the following questions about the switch.
 
-#### S1# show version
+`S1#show version`
 
 <img width="680" height="523" alt="image" src="https://github.com/user-attachments/assets/a143b1fd-1588-44c5-a5f4-b1445ece9bf8" />
 
@@ -221,7 +222,7 @@ The model number of the switch is WS-C2960-24TT.
 
 #### Use the show ip route command on the router to answer the following questions.
 
-#### R1# show ip route
+`R1#show ip route`
 
 <img width="563" height="253" alt="image" src="https://github.com/user-attachments/assets/7ba8764a-746e-434b-9c88-460d61e83de2" />
 
@@ -241,9 +242,9 @@ The interfaces associated with the C coded routes are GigabitEthernet0/0/0 and G
 
 #### Use the show interface g0/1 to answer the following questions.
 
-#### R1# show interfaces g0/0/1
+`R1#show interfaces g0/0/1`
 
-<img width="476" height="352" alt="image" src="https://github.com/user-attachments/assets/17976994-22f6-4507-9d15-d29cc5a5ac59" />
+<img width="482" height="351" alt="image" src="https://github.com/user-attachments/assets/d17bcff9-bd96-4661-a87c-38643cb8956b" />
 
 #### What is the operational status of the G0/0/1 interface?
 
@@ -259,7 +260,36 @@ The Internet address is displayed in CIDR notation as 192.168.1.1/24.
 
 ### Step 4: Display a summary list of the interfaces on the router and switch.
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+#### There are several commands that can be used to verify an interface configuration. One of the most useful of these is the show ip interface brief command. The command output displays a summary list of the interfaces on the device and provides immediate feedback to the status of each interface.
+
+#### a. Enter the show ip interface brief command on the router.
+
+```
+R1#show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0/0   192.168.0.1     YES NVRAM  up                    up
+GigabitEthernet0/0/1   192.168.1.1     YES NVRAM  up                    up
+Serial0/1/0            unassigned      YES unset  down                  down
+Serial0/1/1            unassigned      YES unset  down                  down
+Vlan1                  unassigned      YES NVRAM administratively down  down
+```
+
+<img width="589" height="78" alt="image" src="https://github.com/user-attachments/assets/a209b7c0-44ba-4d7e-8ebc-7bc7a8d094bf" />
+
+#### b.     Enter the show ip interface brief command on the switch.
+
+```
+S1#show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+FastEthernet0/1        unassigned      YES unset  down                  down
+FastEthernet0/2        unassigned      YES unset  down                  down
+<FastEthernet0/3-0/24 interfaces omitted for readability>
+GigabitEthernet0/1     unassigned      YES unset  up                    up
+GigabitEthernet0/2     unassigned      YES unset  down                  down
+Vlan1                  192.168.1.2     YES manual up                    up
+```
+
+<img width="606" height="392" alt="image" src="https://github.com/user-attachments/assets/169d95ab-a76a-4251-9ce8-3a7286df9a99" />
 
 ### Part 2 Summary
 
