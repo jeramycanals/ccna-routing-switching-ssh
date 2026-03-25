@@ -227,11 +227,15 @@ The model number of the switch is WS-C2960-24TT.
 
 #### What code is used in the routing table to indicate a directly connected network?
 
+The code used to indicate a directly connected network in the routing table is C (connected).
+
 #### How many route entries are coded with a C code in the routing table?
+
+There are 2 route entries coded with C in the routing table.
 
 #### What interface types are associated to the C coded routes?
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+The interfaces associated with the C coded routes are GigabitEthernet0/0/0 and GigabitEthernet0/0/1.
 
 ### Step 3: Display interface information on the router.
 
