@@ -123,11 +123,21 @@ Yes, the pings were successful. In the first ping attempt, the first packet time
 
 a. Console into the switch and enable privileged EXEC mode.
 
+<img width="1121" height="143" alt="image" src="https://github.com/user-attachments/assets/7a96def1-d3b3-44bf-baae-940f8ac285cf" />
+
+<img width="249" height="497" alt="image" src="https://github.com/user-attachments/assets/8629e294-9eb6-4605-9275-1632802e7c64" />
+
 b. Enter configuration mode.
+
+<img width="450" height="42" alt="image" src="https://github.com/user-attachments/assets/b03ade85-e65e-4b26-8a68-3511bb0a8ba8" />
 
 c. Assign a device name to the switch according to the Addressing Table.
 
+<img width="198" height="25" alt="image" src="https://github.com/user-attachments/assets/c237d139-d2d4-42cd-9c2f-c0e44f69b8c2" />
+
 d. Assign class as the privileged EXEC encrypted password.
+
+<img width="230" height="28" alt="image" src="https://github.com/user-attachments/assets/cd0c5557-0eea-402e-9ee9-828598e57fc3" />
 
 e. Assign cisco as the console password and enable login.
 
