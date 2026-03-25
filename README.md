@@ -303,13 +303,13 @@ This part reinforces the ability to interpret device output, verify configuratio
 
 ### Step 1: Set the IP domain name and generate secure keys.
 
-a. On R1, configure the domain name as academy.net.
+#### a. On R1, configure the domain name as academy.net.
 
 `R1(config)#ip domain-name academy.net`
 
 <img width="291" height="26" alt="image" src="https://github.com/user-attachments/assets/4594f564-b99f-4422-ac69-5971ae786ae5" />
 
-b. Generate RSA keys with a 1024 key length.
+#### b. Generate RSA keys with a 1024 key length.
 
 ```
 R1(config)#crypto key generate rsa
@@ -324,9 +324,50 @@ How many bits in the modulus [512]: 1024
 
 <img width="514" height="131" alt="image" src="https://github.com/user-attachments/assets/3030dd34-404c-440c-9cc1-4949fc9f648d" />
 
+### Step 2: Create an SSH user and configure VTY lines for SSH-only access.
+
+#### a. Create a user with "SSHuser" as the username and "cisco" as the secret password.
+
+`R1(config)#username SSHuser secret cisco`
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+#### b. Configure the VTY lines to use the local username database for login credentials.
+
+```
+R1(config)#line vty 0 4
+R1(config-line)#login local
+```
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+#### c. The VTY lines should only allow SSH for remote access.
+
+`R1(config-line)#transport input ssh`
+
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+### Step 3: Verify SSH Implementation.
+
+#### a. Click PCA, select Command Prompt in the Desktop tab.
+
+#### b. At the prompt, enter "ssh -l SSHuser 192.168.1.1".
+
+#### c. Enter "cisco" when prompted for the password.
+
+#### What is the displayed message?
+
+#### You should be at the prompt of R1. If you are not successful, verify the configurations are correct and the credentials were entered correctly.
+
 ### Part 3 Summary
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+### Reflection
+
+#### 1. If the G0/0/1 interface showed administratively down, what interface configuration command would you use to turn the interface up?
+
+#### 2. What would happen if you had incorrectly configured interface G0/0/1 on the router with an IP address of 192.168.1.2?
 
 ## Conclusion
 
