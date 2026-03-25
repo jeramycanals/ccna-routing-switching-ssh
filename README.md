@@ -157,7 +157,11 @@ h. Configure the IP address for the SVI for VLAN 1 according to the Addressing T
 
 i. Configure the default gateway according to the Addressing Table.
 
+<img width="295" height="27" alt="image" src="https://github.com/user-attachments/assets/566a7243-5315-4098-9057-d7b73577a5ad" />
+
 j. Save the running configuration to the startup configuration file.
+
+<img width="289" height="64" alt="image" src="https://github.com/user-attachments/assets/3545e4a0-697e-4bda-8b86-e9c81ed8f833" />
 
 ### Part 1 Summary
 
