@@ -194,7 +194,7 @@ In Part 2, we will use Cisco IOS commands to retrieve and analyze information fr
 
 ### Step 1: Retrieve hardware and software information from the network devices.
 
-#### a. Use the show version command to answer the following questions about the router.
+#### a. Use the `show version` command to answer the following questions about the router.
 
 `R1#show version`
 
@@ -204,7 +204,7 @@ In Part 2, we will use Cisco IOS commands to retrieve and analyze information fr
 
 The system image file is "bootflash:/isr4300-universalk9.03.16.05.S.155-3.S5-ext.SPA.bin".
 
-#### b. Use the show version command to answer the following questions about the switch.
+#### b. Use the `show version` command to answer the following questions about the switch.
 
 `S1#show version`
 
@@ -220,7 +220,7 @@ The model number of the switch is WS-C2960-24TT.
 
 ### Step 2: Display the routing table on the router.
 
-#### Use the show ip route command on the router to answer the following questions.
+#### Use the `show ip route` command on the router to answer the following questions.
 
 `R1#show ip route`
 
@@ -240,7 +240,7 @@ The interfaces associated with the C coded routes are GigabitEthernet0/0/0 and G
 
 ### Step 3: Display interface information on the router.
 
-#### Use the show interface g0/1 to answer the following questions.
+#### Use the `show interfaces g0/0/1` to answer the following questions.
 
 `R1#show interfaces g0/0/1`
 
@@ -260,9 +260,9 @@ The Internet address is displayed in CIDR notation as 192.168.1.1/24.
 
 ### Step 4: Display a summary list of the interfaces on the router and switch.
 
-#### There are several commands that can be used to verify an interface configuration. One of the most useful of these is the show ip interface brief command. The command output displays a summary list of the interfaces on the device and provides immediate feedback to the status of each interface.
+#### There are several commands that can be used to verify an interface configuration. One of the most useful of these is the `show ip interface brief` command. The command output displays a summary list of the interfaces on the device and provides immediate feedback to the status of each interface.
 
-#### a. Enter the show ip interface brief command on the router.
+#### a. Enter the `show ip interface brief` command on the router.
 
 ```
 R1#show ip interface brief
@@ -276,7 +276,7 @@ Vlan1                  unassigned      YES NVRAM administratively down  down
 
 <img width="589" height="78" alt="image" src="https://github.com/user-attachments/assets/a209b7c0-44ba-4d7e-8ebc-7bc7a8d094bf" />
 
-#### b.     Enter the show ip interface brief command on the switch.
+#### b.     Enter the `show ip interface brief` command on the switch.
 
 ```
 S1#show ip interface brief
