@@ -293,7 +293,11 @@ Vlan1                  192.168.1.2     YES manual up                    up
 
 ### Part 2 Summary
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Part 2, Cisco IOS show commands are used to retrieve and analyze information from the router and switch. The `show version` command is used to identify hardware details, IOS image, and software version, while the `show ip route` command is used to examine the routing table and identify directly connected networks. 
+
+The `show interfaces` command is used to view detailed interface information, including operational status, MAC address, and IP addressing. Additionally, the `show ip interface brief` command provides a concise summary of all interfaces, allowing for quick verification of interface status and configuration.
+
+This part reinforces the ability to interpret device output, verify configurations, and troubleshoot network connectivity using essential Cisco IOS commands.
 
 ## Part 3: Secure Remote Access to the Router
 
