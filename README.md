@@ -32,7 +32,7 @@ Overall, this lab provides foundational networking skills, including device conf
 - IPv4 Addressing and Subnetting
 - Static IP Configuration
 - VLAN (SVI for switch management)
-- SSH (Secure Remote Access)
+- SSH (Secure Shell Remote Access)
 - Network Troubleshooting (Ping, Tracert)
 - Routing (Directly Connected Networks)
 
@@ -71,7 +71,7 @@ In Part 1, we will set up the network topology and configure basic settings, suc
 - Connect S1 G0/1 to R1 G0/0/1
 - Connect R1 G0/0/0 to PCB F0.
 
-<img width="492" height="101" alt="image" src="https://github.com/user-attachments/assets/84432622-188d-4ac6-8295-56f06ad054a8" />
+<img width="969" height="157" alt="image" src="https://github.com/user-attachments/assets/c3129315-baba-43f1-8cd8-5ab065328600" />
 
 ### Step 2: Assign static IP information to the PC interfaces.
 
@@ -132,7 +132,7 @@ The pings were not successful because the network devices (router and switch) in
 
 #### Were the pings successful this time? Why?
 
-Yes, the pings were successful. In the first ping attempt, the first packet timed out, but the next three packets were received successfully. This happens because the device must first perform ARP (Address Resolution Protocol) to learn the MAC address of the destination or the default gateway. During this process, the first ping request may fail while the ARP table is being updated with the correct MAC address. As shown in the screenshot, the first ping resulted in 1 packet lost (25% loss). However, when the ping command was run again, all four packets were received successfully with 0% packet loss, confirming that the network connectivity between the devices is functioning correctly. Once the ARP information was stored in the device’s ARP cache, communication between the devices happened without any further issues.
+Yes, the pings were successful this time. In the first ping attempt, the first packet timed out, but the next three packets were received successfully. This happens because the device must first perform ARP (Address Resolution Protocol) to learn the MAC address of the destination or the default gateway. During this process, the first ping request may fail while the ARP table is being updated with the correct MAC address. As shown in the screenshot, the first ping resulted in 1 packet lost (25% loss). However, when the ping command was run again, all four packets were received successfully with 0% packet loss, confirming that the network connectivity between the devices is functioning correctly. Once the ARP information was stored in the device’s ARP cache, communication between the devices happened without any further issues.
 
 ### Step 4: Configure S1 (Switch).
 
@@ -271,7 +271,7 @@ GigabitEthernet0/0/0   192.168.0.1     YES NVRAM  up                    up
 GigabitEthernet0/0/1   192.168.1.1     YES NVRAM  up                    up
 Serial0/1/0            unassigned      YES unset  down                  down
 Serial0/1/1            unassigned      YES unset  down                  down
-Vlan1                  unassigned      YES NVRAM administratively down  down
+Vlan1                  unassigned      YES NVRAM  administratively down down
 ```
 
 <img width="589" height="78" alt="image" src="https://github.com/user-attachments/assets/a209b7c0-44ba-4d7e-8ebc-7bc7a8d094bf" />
@@ -371,17 +371,33 @@ After successfully connecting via SSH and entering the password, the message “
 
 ### Part 3 Summary
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Part 3, secure remote access is configured on the router using SSH. The domain name is set and RSA keys are generated to enable encrypted communication. A local user account is created, and the VTY lines are configured to authenticate using the local database and restrict remote access to SSH only.
+
+After configuration, SSH connectivity is tested from a host device to verify successful login. The appearance of the configured banner message confirms that secure remote access is functioning correctly. This part demonstrates how to replace insecure management methods with encrypted access, which is essential for modern network security.
+
+### Lab Results
+
+<img width="979" height="894" alt="github_assessment_items_lab_6_part_1" src="https://github.com/user-attachments/assets/4267bb9c-4835-47ea-8ca3-60208a79c8fd" />
+
+<img width="976" height="256" alt="github_assessment_items_lab_6_part_2" src="https://github.com/user-attachments/assets/1cd1f4df-df31-432c-9b22-24beab03bdb7" />
 
 ### Reflection
 
 #### 1. If the G0/0/1 interface showed administratively down, what interface configuration command would you use to turn the interface up?
 
+If the G0/0/1 interface is administratively down, the `no shutdown` command must be entered in interface configuration mode to enable the interface. This command activates the interface and allows it to begin forwarding traffic.
+
 #### 2. What would happen if you had incorrectly configured interface G0/0/1 on the router with an IP address of 192.168.1.2?
+
+If the interface were configured with the incorrect IP address of 192.168.1.2, it would create an IP address conflict with the switch (S1), which is already using that address. This would cause network communication issues, including failed connectivity and potential routing problems, because devices would not be able to correctly identify the router as the default gateway.
 
 ## Conclusion
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In this lab, a basic network was successfully built and configured using a router, switch, and end devices. Key tasks included assigning IP addressing, configuring device security settings, and verifying connectivity between different subnets. Cisco IOS commands were used to retrieve and interpret device information, reinforcing an understanding of how network devices operate.
+
+Additionally, secure remote access was implemented using SSH by generating RSA keys, configuring user authentication, and restricting access to encrypted connections only. This demonstrated the importance of securing network management and replacing insecure protocols.
+
+Overall, this lab provided hands-on experience with foundational networking concepts, including device configuration, troubleshooting, network verification, and secure remote management. These skills are essential for real-world networking roles and align with core CCNA knowledge.
 
 ## Thank you for checking out my project!
 
