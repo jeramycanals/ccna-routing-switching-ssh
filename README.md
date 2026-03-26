@@ -250,7 +250,7 @@ The interfaces associated with the C coded routes are GigabitEthernet0/0/0 and G
 
 The operational status of the g0/0/1 interface is up, line protocol is up (connected).
 
-#### What is the Media Access Control (MAC) address of the G0/01 interface?
+#### What is the Media Access Control (MAC) address of the G0/0/1 interface?
 
 The MAC address of the g0/0/1 interface is 0060.3edc.7802 (bia 0060.3edc.7802).
 
