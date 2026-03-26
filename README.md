@@ -276,7 +276,7 @@ Vlan1                  unassigned      YES NVRAM administratively down  down
 
 <img width="589" height="78" alt="image" src="https://github.com/user-attachments/assets/a209b7c0-44ba-4d7e-8ebc-7bc7a8d094bf" />
 
-#### b.     Enter the `show ip interface brief` command on the switch.
+#### b. Enter the `show ip interface brief` command on the switch.
 
 ```
 S1#show ip interface brief
@@ -330,7 +330,7 @@ How many bits in the modulus [512]: 1024
 
 `R1(config)#username SSHuser secret cisco`
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="289" height="27" alt="image" src="https://github.com/user-attachments/assets/50e36765-a9f2-4d56-8a4f-1b6fab555c7f" />
 
 #### b. Configure the VTY lines to use the local username database for login credentials.
 
@@ -339,23 +339,33 @@ R1(config)#line vty 0 4
 R1(config-line)#login local
 ```
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="215" height="38" alt="image" src="https://github.com/user-attachments/assets/1050e923-0061-42ed-8918-a8ace855c009" />
 
 #### c. The VTY lines should only allow SSH for remote access.
 
 `R1(config-line)#transport input ssh`
 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="257" height="25" alt="image" src="https://github.com/user-attachments/assets/729e4081-32e2-4af4-9a87-0add7fca811c" />
 
 ### Step 3: Verify SSH Implementation.
 
 #### a. Click PCA, select Command Prompt in the Desktop tab.
 
+<img width="799" height="247" alt="image" src="https://github.com/user-attachments/assets/815f6a58-d814-4861-a52b-fb67a76251a6" />
+
+<img width="794" height="165" alt="image" src="https://github.com/user-attachments/assets/c9e4ab16-1ae8-49ea-8905-842120445764" />
+
 #### b. At the prompt, enter "ssh -l SSHuser 192.168.1.1".
+
+<img width="371" height="184" alt="image" src="https://github.com/user-attachments/assets/24190990-770e-47fb-b7f5-637ef9677ab8" />
 
 #### c. Enter "cisco" when prompted for the password.
 
+<img width="350" height="239" alt="part_3_step_3c" src="https://github.com/user-attachments/assets/cf0f87b9-3abe-4139-b370-6b1de7b1305f" />
+
 #### What is the displayed message?
+
+After successfully connecting via SSH and entering the password, the message “Unauthorized access is prohibited.” is displayed. This is the configured banner message that we set earlier in the lab, showing that remote access is working correctly and the router is enforcing a security warning before granting access.
 
 #### You should be at the prompt of R1. If you are not successful, verify the configurations are correct and the credentials were entered correctly.
 
