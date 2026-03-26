@@ -43,18 +43,18 @@ Overall, this lab provides foundational networking skills, including device conf
 
 ## Lab Objectives
 
-[Part 1: Configure Devices and Verify Connectivity](#part-1--configure-devices-and-verify-connectivity)
+[Part 1: Configure Devices and Verify Connectivity](#part-1-configure-devices-and-verify-connectivity)
 - Assign static IP information to the PC interfaces.
 - Configure the router and switch.
 - Verify network connectivity.
 
-[Part 2: Display Device Information](#part-2--display-device-information)
+[Part 2: Display Device Information](#part-2-display-device-information)
 - Retrieve hardware and software information from the network devices.
 - Interpret the output from the routing table.
 - Display interface information on the router.
 - Display a summary list of the interfaces on the router and switch.
 
-[Part 3: Secure Remote Access to the Router](#part-3--secure-remote-access-to-the-router)
+[Part 3: Secure Remote Access to the Router](#part-3-secure-remote-access-to-the-router)
 - Set the IP domain name and generate secure keys.
 - Create an SSH user and configure VTY lines for SSH-only access.
 - Verify SSH Implementation.
