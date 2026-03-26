@@ -33,7 +33,7 @@ Overall, this lab provides foundational networking skills, including device conf
 - Static IP Configuration
 - VLAN (SVI for switch management)
 - SSH (Secure Shell Remote Access)
-- Network Troubleshooting (Ping, Tracert)
+- Network Troubleshooting (Ping)
 - Routing (Directly Connected Networks)
 
 ## Operating Systems Used
